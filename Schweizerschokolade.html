@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                line-height: 160%;
+                align-items: center;
+                justify-content: center;
+            }
+            #top {
+                text-align: center;
+            }
+            #navigation a {
+                color: rgb(180, 152, 117);
+                padding: 10px;
+            }
+            #navigation a:hover {
+                color:rgb(126, 31, 31);
+            }  
+            #main {
+                max-width: 950px;
+                margin: auto;
+            }
+            h2{
+                font-size: 28px;
+            }
+            hr{
+                margin-top: 40px;
+                margin-bottom: 180px;
+            }
+            * {
+                box-sizing: border-box;
+                font-size: 1rem;
+            }
+            figcaption{
+                font-size: 15px;
+                color: rgb(223, 130, 16);
+                margin-top: 20px;
+            }
+            #picture img{
+                width: 475px;
+                height: 300px;
+            }
+            #maps-container{
+                display: flex;
+                justify-content: space-between; 
+                margin-top: 15px;
+                border-left: 16px solid rgb(167, 164, 164); 
+            }
+            #text-container{
+                width: 30%;
+                display: inline-block;
+                border:2px solid darkred;
+                background-color: rgba(197, 169, 141, 0.211)
+            }
+            h4{
+                margin-top: 85px;
+                border-style: solid;
+            }
+            #emoji{
+                text-align: center;
+            }   
+            li{
+                color:rgb(152, 24, 24);
+            }
+            .pseudo{
+                font-size: 28px;
+                position: relative;
+                display: inline-block;
+                margin:30px;
+            }
+            .pseudo::before{
+                content:'*';
+            }
+            .pseudo::after{
+                content:'*';
+            }
+            .herz{
+                height:70px;
+                width:70px;
+                background: #47081a;
+                position: relative;
+                transform: rotate(-45deg);
+                box-shadow: -10px 10px 90px #f2084a;
+                animation: herz 0.6s linear infinite;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+            @keyframes herz{
+                0%{
+                    transform: rotate(-45deg) scale(0.5)
+                }
+                80%{
+                    transform: rotate(-45deg) scale(0.5)
+                }
+                100%{
+                    transform: rotate(-45deg) scale(0.7)
+                }
+            }
+            .herz::before{
+                content:'';
+                position: absolute;
+                height: 70px;
+                width: 70px;
+                background: #500f22;
+                top: -50%;
+                border-radius:50px;
+                box-shadow: -10px 10px 90px #500f22;
+            }
+            .herz::after{
+                content:'';
+                position: absolute;
+                height: 70px;
+                width: 70px;
+                background: #500f22;
+                right: -50%;
+                border-radius:50px;
+                box-shadow: 10px 10px 90px hsl(342, 90%, 45%);
+            }
+        </style>
+   <meta charset="utf-8">
+   <title>Schokolade & die Schweiz</title>
+   <meta name="viewport" content="width=device-width, inital-scale=1">
+   <link rel="icon" type="image/x-icon" href="Schoki.Tittel.jpg">
+   </head>
+ <body>
+   <div id="top">
+     <div id="navigation">
+       ☗<a href="informatik.html">Startseite</a>
+        <a href="Allgemeine%20Aspekte%20zur%20Schokolade.html">Allgemeine Aspekte zur Schokolade</a>
+        <a href="Zutaten%20und%20Weg%20der%20Schokolade.html">Zutaten und der lange, unfaire Weg der Schokolade</a>
+        <a href="Schweizerschokolade.html">Schweizer-Schokolade</a>
+    </div>
+     <div>
+      <div id="main">
+        <h2 class="pseudo">Schweizer-Schokolade</h2> 
+        <p>Wie wir alle wissen ist der <b>Ruf</b> der Schweiz, bezüglich der Schokolade hoch angesehen. Wieso ist die Schweizer Schokolade so bekannt? was steckt den hinter Ihrer Fassade?</p>
+        <p>Ganz einfach! das heraustechende an der schweizer Schokolade ist das zarte Schmelzen im Mund. In der Schweiz wird der Vorgang des Conchierens<b>(= Während des Conchieren wird die Schokolade über einen längeren Zeitraum unter hoher Temperatur gerührt, damit das überflüssige Wasser entzogen und gleichmäßig in der Schokolade verteilt wird.)</b> Somit entsteht der charakteristische Geschmack, der Geruch und die Textur entwickeln sich während des Conchierens. Ebenfalls wird bei der Milchschokolade anstatt der <u>Kakobutter</u> lieber <u>Milchrahm</u></p>
+        <div id="picture">
+            <img src="https://schokoladen-gourmet-festival.de/wp-content/uploads/2016/08/Fotolia_73873592_Subscription_Monthly_M-%C2%A9-goodween123-Fotolia.com_.jpg" alt= "Bild bei Conchieren" title="Conchieren der Schokolade">
+        </div>
+        <figcaption>
+            <u>Bild vom Prozess des Conchieren</u>
+        </figcaption>
+        <p>Wie man sieht steckt hinter der Fassade der Schweiz regeltrecht ihre wunderbare Jahrelange Erfahrung an der Herstellung der Schokolade und ihre Geheimrezepte!</p>
+        <p>deswegen zählt die Schweizer Schokolade als einer der besten Schokoladen der Welt!</p><div class="herz"></div>    
+        <h4>Die grösste Schokoladenfabrik der Welt: Barry Callebaut</h4>
+        <p>Mit einem Umsatz von rund CHF 7.2 Milliarden für das Geschäftsjahr 2020/21 ist die in Zürich ansässige Barry Callebaut Gruppe der weltweit grösste Hersteller von hochwertigen Schokoladen- und Kakaoprodukten – von der Beschaffung und Verarbeitung der Kakaobohnen bis zur Herstellung der feinsten Schokoladen, einschliesslich Füllungen, Dekorationen und Schokoladenmischungen. Die Gruppe unterhält weltweit rund 61 Produktionsstandorte und beschäftigt eine vielfältige und engagierte Belegschaft von mehr als 13'000 Mitarbeiterinnen und Mitarbeitern.</p>
+        <div id="maps-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2700.947189132117!2d8.508336615566403!3d47.393463279171165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900a470b250a91%3A0xa5052b9f626a1f62!2sBarry%20Callebaut%20AG!5e0!3m2!1sde!2sch!4v1665526249169!5m2!1sde!2sch" width="600" height="450" style="border: 0px;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="text-container">
+                <h5>Steckbrief der Barry Callebaut AG</h5>
+                <div id="emoji"> 
+                    <span style='font-size:40px;'>&#127851;</span>
+                </div>
+                <ul>
+                    <li>Sitz = Zürich, Schweiz</li>
+                    <li>Mitarbeitersatz = 12. 783 Personnen</li>
+                    <li>Leitung = peter bonne</li>
+                    <li>Umsatz = 7.207.600.000 CHF</li>
+                    <li>Gründung = 1996</li>
+                </ul>
+                <span style="font-size:40px">&#127851;</span>
+            </div>
+          </div>
+          <figcaption>
+            <u>Standort von der Barry Callebaut AG in Zürich + Steckbrief</u>
+          </figcaption>
+          <hr>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
